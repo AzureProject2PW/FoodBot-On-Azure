@@ -22,6 +22,12 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 </p>
 
 ## Wybrany stos technologiczny
+- Azure
+  - Active Directory
+  - App Service
+  - Bot Service
+  - Cognitive Service - serwis ten umożliwił stworzenie *Knowledge Base* korzystając z QnA Maker, z bazy wiedzy korzysta utworzony przez nas bot,
+  - LUIS (Language Understanding)
 
 ## Opis działania rozwiązania
 Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
