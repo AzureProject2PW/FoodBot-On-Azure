@@ -94,10 +94,6 @@ W przypadku podanych błędnych danych przez użytkownika, bot o tym poinformuje
 
 --dodać zdjęcie--
 
-W przypadku pytań, na które bot nie zna odpowiedzi zostanie wyświetlona odpowiedź domyślna.
-
---dodać zdjęcie--
-
 ## Demo
 W celu obejrzenia dema projektu opisanego powyżej, należy skorzystać ze zdjęcia załączonego poniżej:
 
