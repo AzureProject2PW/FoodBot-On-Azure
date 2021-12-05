@@ -28,6 +28,9 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
   - Bot Service
   - Cognitive Service - serwis ten umożliwił stworzenie *Knowledge Base* korzystając z QnA Maker, z bazy wiedzy korzysta utworzony przez nas bot,
   - LUIS (Language Understanding)
+- nie jestem pewna jak nazwać tę kategorię
+  - Bot Framework Composer
+  - Bot Framework Emulator
 
 ## Opis działania rozwiązania
 Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
