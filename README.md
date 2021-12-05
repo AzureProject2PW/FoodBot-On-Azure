@@ -9,10 +9,10 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 <a href="https://psychologiawpraktyce.pl/artykul/zaburzenia-odzywiania-wsrod-dzieci-i-mlodziezy" target="_blank">Link do danych na temat zaburzeń odżywiania</a>
 
 ## Skład zespołu
-* Kinga Kocoł - <a href="https://github.com/kingakocol" target="_blank">Link do konta</a>
-* Aleksandra Kowalczyk - <a href="https://github.com/Olakow" target="_blank">Link do konta</a>
-* Martyna Jakubowska - <a href="https://github.com/mjakubowska" target="_blank">Link do konta</a>
-* Aleksander Wodnicki - <a href="https://github.com/AleksanderWodnicki" target="_blank">Link do konta</a>
+* Kinga Kocoł – <a href="https://github.com/kingakocol" target="_blank">Link do konta</a>
+* Aleksandra Kowalczyk – <a href="https://github.com/Olakow" target="_blank">Link do konta</a>
+* Martyna Jakubowska – <a href="https://github.com/mjakubowska" target="_blank">Link do konta</a>
+* Aleksander Wodnicki – <a href="https://github.com/AleksanderWodnicki" target="_blank">Link do konta</a>
 
 ## Opis funkcjonalności
 
@@ -22,15 +22,18 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 </p>
 
 ## Wybrany stos technologiczny
-- Azure
-  - Active Directory
-  - App Service
-  - Bot Service
-  - Cognitive Service - serwis ten umożliwił stworzenie *Knowledge Base* korzystając z QnA Maker, z bazy wiedzy korzysta utworzony przez nas bot,
-  - LUIS (Language Understanding)
-- nie jestem pewna jak nazwać tę kategorię
-  - Bot Framework Composer
-  - Bot Framework Emulator
+- Azure:
+  - Active Directory –
+  - App Service –
+  - App Service Editor –
+  - Bot Service –
+  - Cognitive Service – serwis ten umożliwił stworzenie *Knowledge Base* korzystając z QnA Maker, z bazy wiedzy korzysta utworzony przez nas bot,
+  - LUIS (Language Understanding) –
+- nie jestem pewna jak nazwać tę kategorię:
+  - Bot Framework Composer –
+  - Bot Framework Emulator –
+- Język:
+  - C# –
 
 ## Opis działania rozwiązania
 Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
