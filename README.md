@@ -37,7 +37,7 @@ Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie z
 
 --dodać zdjęcie--
 
-Od tego momenu możliwe jest komunikowanie się z botem. Tworząc bazę wiedzy wybraliśmy, aby nasz bot zawierał chit-chat (friendly), co oznacza, że po stworzeniu bazy zawierała ona już część pytań, które użytkownik może zadać i odpowiedzi bota na nie. Poniżej zostały wypisane przykładowe pytania z różnych kategorii, które możemy zadać:
+Od tego momentu możliwe jest komunikowanie się z botem. Tworząc bazę wiedzy wybraliśmy, aby nasz bot zawierał chit-chat (friendly), oznacza to, że po stworzeniu bazy zawierała ona już część pytań, które użytkownik może zadać i odpowiedzi bota na nie. Poniżej zostały wypisane przykładowe pytania z różnych kategorii, które możemy zadać:
 - chit chat
   - Who are you?
   - Are you old?
@@ -76,6 +76,18 @@ W ramach niektórych pytań bot zwraca nie tylko odpowiedź, ale również link 
 --dodać zdjęcie--
 
 W przypadku, niektórych pytań możliwe jest prowadzenie dłuższej konwersacji z botem. Przykładem jest pytanie o bulimię.
+
+--dodać zdjęcie--
+
+Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne (BMR) na podstawie podanych przez użytkownika danych.
+
+--dodać zdjęcie--
+
+Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika.
+
+--dodać zdjęcie--
+
+W przypadku podanych błędnych danych przez użytkownika, bot o tym poinformuje.
 
 --dodać zdjęcie--
 
