@@ -15,6 +15,11 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 * Aleksander Wodnicki – <a href="https://github.com/AleksanderWodnicki" target="_blank">Link do konta</a>
 
 ## Opis funkcjonalności
+*Dietetyczny Bot* zawiera rozbudowaną bazę wiedzy związaną z tematyką zdrowego odżywiania oraz zaburzeń odżywiania. Dzięki tej bazie użytkownik ma możliwość komunikacji z botem poprzez zadawanie zróżnicowanych pytań.
+
+Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
+-
+-
 
 ## Architektura
 <p align="center">
@@ -23,17 +28,17 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 
 ## Wybrany stos technologiczny
 - Azure:
-  - Active Directory –
-  - App Service –
-  - App Service Editor –
-  - Bot Service –
-  - Cognitive Service – serwis ten umożliwił stworzenie *Knowledge Base* korzystając z QnA Maker, z bazy wiedzy korzysta utworzony przez nas bot,
-  - LUIS (Language Understanding) –
-- nie jestem pewna jak nazwać tę kategorię:
-  - Bot Framework Composer –
-  - Bot Framework Emulator –
+  - Active Directory – nasz domyślna organizacja Politechnika Warszawska nieumożliwia nam korzystania ze wszystkich serwisów, między innymi z *Bot Service*, dlatego postanowiliśmy stworzyć nową organizację `DietBot-On-Azure`. Po utworzeniu nowej organizacji i przeniesieniu do niej subskrypcji mogliśmy korzystać z wymienionych serwisów niezbędnych do stworzenia projektu.
+  - App Service – serwis ten został wykorzystany w przypadku *Bota Aplikacji Internetowej* oraz *QnA Maker*.
+  - App Service Editor – dzięki niemu możliwe było edytowanie plików.
+  - Bot Service – serwis ten umożliwił stworzenie *Bot Aplikacji Internetowej* DietBotOnAzure-Bot.
+  - Cognitive Service – serwis ten umożliwił stworzenie *Knowledge Base* korzystając z *QnA Maker*, z bazy wiedzy korzysta utworzony przez nas bot.
+  - LUIS (Language Understanding) – dzięki tej usłudze możliwe było dodanie funkcjonalności związanych z wyliczaniem wskaźnika masy ciała, zapotrzebowania kalorycznego, czy informowania o kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych.
+- środowisko programistyczne:
+  - Bot Framework Composer – środowisko to umożliwia lokalne tworzenie bota, a następnie umożliwia opublikowanie go na platformie Azure.
+  - Bot Framework Emulator – środowisko to umożliwiło przetestowanie powstałego bota lokalnie.
 - Język:
-  - C# –
+  - C# – język wykorzystywany do edycji plików wspomnianych przy opisie usługi *Azure App Service Editor*.
 
 ## Opis działania rozwiązania
 Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
