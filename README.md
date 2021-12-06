@@ -2,7 +2,7 @@
 Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań opartych o Sztuczną Inteligencję i Microsoft Azure* prowadzonym na Politechnice Warszawskiej.
 
 ## Opis i cel projektu
-Światowa Organizacja Zdrowia ogłosiła, że 800 milionów osób zmaga się z otyłością. Liczba osób chorujących wśród dorosłych wzrosła od 1975 roku prawie trzykrotnie. Chorujący są w każdym wieku, w każdej grupie społecznej oraz w krajach o różnym poziomie rozwinięcia. Szacuje się, że do 2025 roku na walkę z otyłością zostanie przeznaczone ponad bilion dolarów. Natomiast na zaburzenia odżywiania, które są przypadłościami psychosomatycznymi cierpi około 70 milionów osób na całym świecie. Około 6% przypadków tych zaburzeń kończy się śmiercią, zarówno spowodowanej skutkami zdrowotnymi, jak i samobójstwem. Dlatego w ramach projektu chcieliśmy stworzyć bota, który zwiększy świadomość na temat zaburzeń odżywiania, ale również będzie podawał przydatne informacje na temat zdrowego sposobu odżywiania. Powstały bot potrafi na podstawie podanych przez użytkownika danych wyliczyć wskaźnik masy ciała (BMI), zapotrzebowanie kaloryczne oraz zwrócić informacje na temat kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych. Z naszym botem można komunikować się w języku angielskim.
+Światowa Organizacja Zdrowia ogłosiła, że 800 milionów osób zmaga się z otyłością. Liczba osób chorujących wśród dorosłych wzrosła od 1975 roku prawie trzykrotnie. Chorujący są w każdym wieku, w każdej grupie społecznej oraz w krajach o różnym poziomie rozwinięcia. Szacuje się, że do 2025 roku na walkę z otyłością zostanie przeznaczone ponad bilion dolarów. Natomiast na zaburzenia odżywiania, które są przypadłościami psychosomatycznymi cierpi około 70 milionów osób na całym świecie. Około 6% przypadków tych zaburzeń kończy się śmiercią, zarówno spowodowanej skutkami zdrowotnymi, jak i samobójstwem. Dlatego w ramach projektu chcieliśmy stworzyć bota, który zwiększy świadomość na temat zaburzeń odżywiania, ale również będzie podawał przydatne informacje na temat zdrowego sposobu odżywiania. Powstały bot potrafi na podstawie podanych przez użytkownika danych wyliczyć wskaźnik masy ciała (BMI), zapotrzebowanie kaloryczne oraz zwrócić informacje na temat kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych oraz bot przeprowadza ich analizę i infromuje o dominującym makroskładniku. Z naszym botem można komunikować się w języku angielskim.
 
 <a href="https://pulsmedycyny.pl/who-otylosc-to-choroba-ktora-dotyka-800-mln-ludzi-na-swiecie-1110168" target="_blank">Link do danych na temat otyłości</a>
 
@@ -23,7 +23,7 @@ Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
 - wyświetlanie informacji dotyczących najpopularniejszych diet,
 - bot oprócz odpowiedzi w formie tekstowej, zwraca również odpowiedzi ze zdjęciami oraz linkami do stron zewnętrznych, które zawierają więcej informacji związanych z tematyką bota,
 - obsługa *follow-up prompts*, które zwracają przykładowe pytania bądź hasła, które nawiązują do tematyki udzielonej odpowiedzi,
-- wyświetlanie informacji dotyczącej kaloryczności i zawartości odżywczych podanych przez użytkownika składników odżywczych,
+- wyświetlanie informacji dotyczącej kaloryczności i zawartości odżywczych podanych przez użytkownika składników odżywczych oraz ich analiza,
 - wyliczanie wskaźnika masy ciała (BMI) na podstawie danych podanych przez użytkownika,
 - wyliczanie zapotrzebowania kalorycznego na podstawie danych podanych przez użytkownika.
 
@@ -103,7 +103,7 @@ Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kalo
 
 --dodać zdjęcie--
 
-Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa *Food* lub frazy *Tell me about a product*. Następnie należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika.
+Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa *Food* lub frazy *Tell me about a product*. Potem należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika. Następnie bot analizuje zwracane wartości odżywcze i informuje o dominującym makroskładniku.
 
 --dodać zdjęcie--
 
