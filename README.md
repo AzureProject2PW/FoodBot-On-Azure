@@ -38,7 +38,7 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 ## Opis działania rozwiązania
 Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
 
---dodać zdjęcie--
+![bot_1](https://user-images.githubusercontent.com/64069048/144845276-dcf82e16-f600-43b5-ba89-3c316ac0fea6.png)
 
 Od tego momentu możliwe jest komunikowanie się z botem. Tworząc bazę wiedzy wybraliśmy, aby nasz bot zawierał chit-chat (friendly), oznacza to, że po stworzeniu bazy zawierała ona już część pytań, które użytkownik może zadać i odpowiedzi bota na nie. Poniżej zostały wypisane przykładowe pytania z różnych kategorii, które możemy zadać:
 - chit chat
@@ -77,16 +77,17 @@ Od tego momentu możliwe jest komunikowanie się z botem. Tworząc bazę wiedzy 
 W ramach niektórych pytań bot zwraca nie tylko odpowiedź, ale również link do strony na której można uzyskać więcej informacji na wybrany temat. Przykładem jest pytanie dotyczące ilości płynów, które należy wypić każdego dnia.
 
 --dodać zdjęcie--
+![website_1](https://user-images.githubusercontent.com/64069048/144846347-c9c2f40d-dd00-4d05-bb90-448402d70556.png)
 
 W przypadku, niektórych pytań możliwe jest prowadzenie dłuższej konwersacji z botem. Przykładem jest pytanie o bulimię.
 
 --dodać zdjęcie--
 
-Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne (BMR) na podstawie podanych przez użytkownika danych.
+Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne na podstawie podanych przez użytkownika danych. Jeżeli chcemy poznać swoje BMI należy poinformowac o tym bota - Calculate BMI., a następnie należy wykonywać polecenia bota. Podobnie jest w przypadku zapotrzebowania kalorycznego - Calculate DCR.
 
 --dodać zdjęcie--
 
-Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika.
+Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa food. Następnie należy podać nazwę produktu.
 
 --dodać zdjęcie--
 
