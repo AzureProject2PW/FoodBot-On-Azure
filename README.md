@@ -99,13 +99,13 @@ W przypadku, niektórych pytań możliwe jest prowadzenie dłuższej konwersacji
 
 ![bot_4](https://user-images.githubusercontent.com/64069048/144929695-9f8a0ffd-5e64-4cf7-b020-b5fcdfbafda3.png)
 
-Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne na podstawie podanych przez użytkownika danych. Jeżeli chcemy poznać swoje BMI należy poinformować o tym bota - *Calculate BMI*., a następnie należy wykonywać polecenia bota. Podobnie jest w przypadku zapotrzebowania kalorycznego - *Calculate DCR.*
+Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne na podstawie podanych przez użytkownika danych. Jeżeli chcemy poznać swoje BMI należy poinformować o tym bota - *Could you please calculate my BMI?*, a następnie należy wykonywać polecenia bota. Podobnie jest w przypadku zapotrzebowania kalorycznego - *Could you please calculate my DCR?*
 
---dodać zdjęcie--
+![bot_5](https://user-images.githubusercontent.com/64069048/144938162-ed48ba19-a2b9-439c-b237-68f19d83897d.png)
 
 Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa *Food* lub frazy *Tell me about a product*. Potem należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika. Następnie bot analizuje zwracane wartości odżywcze i informuje o dominującym makroskładniku.
 
---dodać zdjęcie--
+![bot_8](https://user-images.githubusercontent.com/64069048/144938218-23e0adb8-3728-4a4b-b68d-8f0fbcde0f49.png)
 
 W przypadku podanych błędnych danych przez użytkownika, bot o tym poinformuje.
 
