@@ -15,13 +15,15 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 * Aleksander Wodnicki – <a href="https://github.com/AleksanderWodnicki" target="_blank">Link do konta</a>
 
 ## Opis funkcjonalności
-*Dietetyczny Bot* zawiera rozbudowaną bazę wiedzy związaną z tematyką zdrowego odżywiania oraz zaburzeń odżywiania. Dzięki tej bazie użytkownik ma możliwość komunikacji z botem poprzez zadawanie zróżnicowanych pytań.
+*Dietetyczny Bot* zawiera rozbudowaną bazę wiedzy związaną z tematyką zdrowego odżywiania oraz zaburzeń odżywiania. Dzięki tej bazie użytkownik ma możliwość komunikacji z botem poprzez zadawanie zróżnicowanych pytań.![263832283_741000786859202_3278040059904357753_n](https://user-images.githubusercontent.com/64069048/144934067-d625f1ab-ae74-4de6-8663-c7b162b2aea4.png)
+
 
 Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
 - wyświetlanie informacji dotyczących zaburzeń odżywiania (czym są, opis kilku zaburzeń odżywiania (anoreksja, bulimia, ortoreksja, zaburzenia z napadami objadania się), objawy (zmiany w zachowaniu, psychiczne, fizyczne), skutki chorobowe, sposoby leczenia),
 - przekazywanie informacji dotyczących zdrowego odżywiania i aktywności fizycznej,
 - wyświetlanie informacji dotyczących najpopularniejszych diet,
-- bot oprócz odpowiedzi w formie tekstowej, zwraca również odpowiedzi ze zdjęciami oraz linkami do stron zewnętrznych, które zawierają więcej informacji związanych z tematyką bota,
+- bot oprócz odpowiedzi w formie tekstowej, zwraca również odpowiedzi ze zdjęciami oraz linkami do stron zewnętrznych, które zawierają więcej informacji związanych z tematyką bota,![bot_7](https://user-images.githubusercontent.com/64069048/144934156-3273ed1f-dcd7-4ebd-83ac-583532940e8e.png)
+
 - obsługa *follow-up prompts*, które zwracają przykładowe pytania bądź hasła, które nawiązują do tematyki udzielonej odpowiedzi,
 - wyświetlanie informacji dotyczącej kaloryczności i zawartości odżywczych podanych przez użytkownika składników odżywczych,
 - wyliczanie wskaźnika masy ciała (BMI) na podstawie danych podanych przez użytkownika,
@@ -109,7 +111,7 @@ Nasz bot daje również możliwość zwracania informacji o kaloryczności i zaw
 
 W przypadku podanych błędnych danych przez użytkownika, bot o tym poinformuje.
 
---dodać zdjęcie--
+![bot_7](https://user-images.githubusercontent.com/64069048/144934187-7d332fe1-22b1-49d9-a86e-5ae9a97c2425.png)
 
 ## Demo
 W celu obejrzenia dema projektu opisanego powyżej, należy skorzystać ze zdjęcia załączonego poniżej:
