@@ -2,7 +2,7 @@
 Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań opartych o Sztuczną Inteligencję i Microsoft Azure* prowadzonym na Politechnice Warszawskiej.
 
 ## Opis i cel projektu
-Światowa Organizacja Zdrowia ogłosiła, że 800 milionów osób zmaga się z otyłością. Liczba osób chorujących wśród dorosłych wzrosła od 1975 roku prawie trzykrotnie. Chorujący są w każdym wieku, w każdej grupie społecznej oraz w krajach o różnym poziomie rozwinięcia. Szacuje się, że do 2025 roku na walkę z otyłością zostanie przeznaczone ponad bilion dolarów. Natomiast na zaburzenia odżywiania, które są przypadłościami psychosomatycznymi cierpi około 70 milionów osób na całym świecie. Około 6% przypadków tych zaburzeń kończy się śmiercią, zarówno spowodowanej skutkami zdrowotnymi, jak i samobójstwem. Dlatego w ramach projektu chcieliśmy stworzyć bota, który zwiększy świadomość na temat zaburzeń odżywiania, ale również będzie podawał przydatne informacje na temat zdrowego sposobu odżywiania. Powstały bot potrafi na podstawie podanych przez użytkownika danych wyliczyć wskaźnik masy ciała (BMI), zapotrzebowanie kaloryczne (BMR) oraz zwrócić informacje na temat kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych. Z naszym botem można komunikować się w języku angielskim.
+Światowa Organizacja Zdrowia ogłosiła, że 800 milionów osób zmaga się z otyłością. Liczba osób chorujących wśród dorosłych wzrosła od 1975 roku prawie trzykrotnie. Chorujący są w każdym wieku, w każdej grupie społecznej oraz w krajach o różnym poziomie rozwinięcia. Szacuje się, że do 2025 roku na walkę z otyłością zostanie przeznaczone ponad bilion dolarów. Natomiast na zaburzenia odżywiania, które są przypadłościami psychosomatycznymi cierpi około 70 milionów osób na całym świecie. Około 6% przypadków tych zaburzeń kończy się śmiercią, zarówno spowodowanej skutkami zdrowotnymi, jak i samobójstwem. Dlatego w ramach projektu chcieliśmy stworzyć bota, który zwiększy świadomość na temat zaburzeń odżywiania, ale również będzie podawał przydatne informacje na temat zdrowego sposobu odżywiania. Powstały bot potrafi na podstawie podanych przez użytkownika danych wyliczyć wskaźnik masy ciała (BMI), zapotrzebowanie kaloryczne oraz zwrócić informacje na temat kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych. Z naszym botem można komunikować się w języku angielskim.
 
 <a href="https://pulsmedycyny.pl/who-otylosc-to-choroba-ktora-dotyka-800-mln-ludzi-na-swiecie-1110168" target="_blank">Link do danych na temat otyłości</a>
 
@@ -18,8 +18,14 @@ Projekt realizowany w ramach przedmiotu *Wprowadzenie do aplikacji i rozwiązań
 *Dietetyczny Bot* zawiera rozbudowaną bazę wiedzy związaną z tematyką zdrowego odżywiania oraz zaburzeń odżywiania. Dzięki tej bazie użytkownik ma możliwość komunikacji z botem poprzez zadawanie zróżnicowanych pytań.
 
 Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
--
--
+- wyświetlanie informacji dotyczących zaburzeń odżywiania (czym są, opis kilku zaburzeń odżywiania (anoreksja, bulimia, ortoreksja, zaburzenia z napadami objadania się), objawy (zmiany w zachowaniu, psychiczne, fizyczne), skutki chorobowe, sposoby leczenia),
+- przekazywanie informacji dotyczących zdrowego odżywiania i aktywności fizycznej,
+- wyświetlanie informacji dotyczących najpopularniejszych diet,
+- bot oprócz odpowiedzi w formie tekstowej, zwraca również odpowiedzi ze zdjęciami oraz linkami do stron zewnętrznych, które zawierają więcej informacji związanych z tematyką bota,
+- obsługa *follow-up prompts*, które zwracają przykładowe pytania bądź hasła, które nawiązują do tematyki udzielonej odpowiedzi,
+- wyświetlanie informacji dotyczącej kaloryczności i zawartości odżywczych podanych przez użytkownika składników odżywczych,
+- wyliczanie wskaźnika masy ciała (BMI) na podstawie danych podanych przez użytkownika,
+- wyliczanie zapotrzebowania kalorycznego na podstawie danych podanych przez użytkownika.
 
 ## Architektura
 <p align="center">
@@ -28,14 +34,14 @@ Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
 
 ## Wybrany stos technologiczny
 - Azure:
-  - Active Directory – nasz domyślna organizacja Politechnika Warszawska nieumożliwia nam korzystania ze wszystkich serwisów, między innymi z *Bot Service*, dlatego postanowiliśmy stworzyć nową organizację `DietBot-On-Azure`. Po utworzeniu nowej organizacji i przeniesieniu do niej subskrypcji mogliśmy korzystać z wymienionych serwisów niezbędnych do stworzenia projektu.
+  - Active Directory – nasz domyślna organizacja `Politechnika Warszawska` nieumożliwia nam korzystania ze wszystkich serwisów, między innymi z *Bot Service*, dlatego postanowiliśmy stworzyć nową organizację `DietBot-On-Azure`. Po utworzeniu nowej organizacji i przeniesieniu do niej subskrypcji mogliśmy korzystać z wymienionych serwisów niezbędnych do stworzenia projektu.
   - App Service – serwis ten został wykorzystany w przypadku *Bota Aplikacji Internetowej* oraz *QnA Maker*.
   - App Service Editor – dzięki niemu możliwe było edytowanie plików.
   - Bot Service – serwis ten umożliwił stworzenie *Bot Aplikacji Internetowej* DietBotOnAzure-Bot.
   - Cognitive Service – serwis ten umożliwił stworzenie *Knowledge Base* korzystając z *QnA Maker*, z bazy wiedzy korzysta utworzony przez nas bot.
-  - LUIS (Language Understanding) – dzięki tej usłudze możliwe było dodanie funkcjonalności związanych z wyliczaniem wskaźnika masy ciała, zapotrzebowania kalorycznego, czy informowania o kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych.
+  - LUIS (Language Understanding) – dzięki tej usłudze możliwe było dodanie funkcjonalności związanych z wyliczaniem wskaźnika masy ciała, zapotrzebowania kalorycznego oraz informowania o kaloryczności i zawartości odżywczych poszczególnych produktów spożywczych.
 - środowisko programistyczne:
-  - Bot Framework Composer – środowisko to umożliwia lokalne tworzenie bota, a następnie umożliwia opublikowanie go na platformie Azure.
+  - Bot Framework Composer – środowisko to umożliwiło lokalne tworzenie bota, a następnie opublikowanie go na platformie Azure.
   - Bot Framework Emulator – środowisko to umożliwiło przetestowanie powstałego bota lokalnie.
 - Język:
   - C# – język wykorzystywany do edycji plików wspomnianych przy opisie usługi *Azure App Service Editor*.
