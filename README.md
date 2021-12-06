@@ -28,8 +28,10 @@ Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
 - wyliczanie zapotrzebowania kalorycznego na podstawie danych podanych przez użytkownika.
 
 ## Architektura
+W ramach projektu powstały dwa boty. Pierwszy posiada bazę wiedzy i jest aplikacją internetową, aby przetestować bota wystarczy skorzystać z <a href="https://webchat.botframework.com/embed/DietBotOnAzureBot/gemini?b=DietBotOnAzureBot&s=rq5GZ0voqt0.gF5f4jr4i1jzUSM64dQUAvs_v5__o_lPH4vqSnqZUZg&username=You" target="_blank">linku do *Dietetycznego Bota*</a>. Drugi bot został wzbogacony o serwis LUIS (Language Understanding), jednak żeby z niego skorzystać należy pobrać kod źródłowy zamieszczony w repozytorium i uruchomić go korzystając ze środowiska Bot Framework Emulator, który umożliwia przetestowanie bota lokalnie.
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/64069048/144723367-8dfed661-4a9c-414f-b923-1bacd1e96b69.png"/>
+  <img src="https://user-images.githubusercontent.com/64069048/144930781-d66f299d-b6ac-4d74-a357-8f12a537ccd9.png"/>
 </p>
 
 ## Wybrany stos technologiczny
@@ -47,7 +49,7 @@ Poniżej zostały opisane funkcjonalności *Dietetycznego Bota*:
   - C# – język wykorzystywany do edycji plików wspomnianych przy opisie usługi *Azure App Service Editor*.
 
 ## Opis działania rozwiązania
-Aby uruchomić dietetycznego bota należy skożystać z tego linku. Następnie zostaniemy przekierowani do Web Chatu.
+Po uruchomieniu dietetycznego bota zostaniemy przekierowani do Web Chatu.
 
 ![bot_1](https://user-images.githubusercontent.com/64069048/144845276-dcf82e16-f600-43b5-ba89-3c316ac0fea6.png)
 
@@ -87,18 +89,21 @@ Od tego momentu możliwe jest komunikowanie się z botem. Tworząc bazę wiedzy 
 
 W ramach niektórych pytań bot zwraca nie tylko odpowiedź, ale również link do strony na której można uzyskać więcej informacji na wybrany temat. Przykładem jest pytanie dotyczące ilości płynów, które należy wypić każdego dnia.
 
---dodać zdjęcie--
+![bot_2](https://user-images.githubusercontent.com/64069048/144929374-96910883-64b7-49de-8cfb-e4e909bd3f50.png)
+
 ![website_1](https://user-images.githubusercontent.com/64069048/144846347-c9c2f40d-dd00-4d05-bb90-448402d70556.png)
 
 W przypadku, niektórych pytań możliwe jest prowadzenie dłuższej konwersacji z botem. Przykładem jest pytanie o bulimię.
 
+![bot_3](https://user-images.githubusercontent.com/64069048/144929682-519272df-d289-4d5e-90b5-277badcb7803.png)
+
+![bot_4](https://user-images.githubusercontent.com/64069048/144929695-9f8a0ffd-5e64-4cf7-b020-b5fcdfbafda3.png)
+
+Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne na podstawie podanych przez użytkownika danych. Jeżeli chcemy poznać swoje BMI należy poinformować o tym bota - *Calculate BMI*., a następnie należy wykonywać polecenia bota. Podobnie jest w przypadku zapotrzebowania kalorycznego - *Calculate DCR.*
+
 --dodać zdjęcie--
 
-Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kaloryczne na podstawie podanych przez użytkownika danych. Jeżeli chcemy poznać swoje BMI należy poinformowac o tym bota - Calculate BMI., a następnie należy wykonywać polecenia bota. Podobnie jest w przypadku zapotrzebowania kalorycznego - Calculate DCR.
-
---dodać zdjęcie--
-
-Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa food. Następnie należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika.
+Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa *Food* lub frazy *Tell me about a product*. Następnie należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika.
 
 --dodać zdjęcie--
 
