@@ -98,7 +98,7 @@ Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kalo
 
 --dodać zdjęcie--
 
-Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa food. Następnie należy podać nazwę produktu.
+Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa food. Następnie należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika.
 
 --dodać zdjęcie--
 
