@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_DierBot3",
+  "recognizers": {
+    "en-us": "DierBot3.en-us.qna",
+    "": "DierBot3.en-us.qna"
+  }
+}

@@ -1,0 +1,44 @@
+[import](common.lg)
+
+# TextInput_Prompt_YVMx7W()
+[Activity
+    Text = ${TextInput_Prompt_YVMx7W_text()}
+]
+
+# TextInput_Prompt_YVMx7W_text()
+- Please type the amount and name of product (e.g. cup of pasta).
+# SendActivity_AFc0j1()
+[Activity
+    Text = ${SendActivity_AFc0j1_text()}
+]
+
+# SendActivity_AFc0j1_text()
+- We have found your product (${dialog.product.food.label})! You can see all the necessary nutritional values per 100 grams below:\n\n\n\nCalories: ${dialog.product.food.nutrients.ENERC_KCAL} kcal\n\nCarbohydrates: ${dialog.product.food.nutrients.CHOCDF} g\n\nProtein: ${dialog.product.food.nutrients.PROCNT} g\n\nFats: ${dialog.product.food.nutrients.FAT} g\n\nFiber: ${dialog.product.food.nutrients.FIBTG} g
+# SendActivity_joO4ZX()
+[Activity
+    Text = ${SendActivity_joO4ZX_text()}
+]
+
+# SendActivity_joO4ZX_text()
+- I am sorry, but I am unable to find the product you wanted to know more about :( You can try again by retyping the request.
+# SendActivity_paS4va()
+[Activity
+    Text = ${SendActivity_paS4va_text()}
+]
+
+# SendActivity_paS4va_text()
+- Your product has a lot of fats!\n\nA small amount of fat is an essential part of a healthy, balanced diet. Fat is a source of essential fatty acids, which the body cannot make itself. Any fat that is not used by your body's cells or turned into energy is converted into body fat. As a part of healthy diet, you should try to cut down on foods and drinks that are high in saturated fats and trans fats as they increase amount of harmful cholesterol which is bad for your health.
+# SendActivity_wtvldj()
+[Activity
+    Text = ${SendActivity_wtvldj_text()}
+]
+
+# SendActivity_wtvldj_text()
+- Your product has a lot of protein!\nProtein is an important part of a healthy diet. They are made of chemical 'building blocks' called amino acids. It is used in your body to build and repair muscles and bones and to make hormones and enzymes. Although protein is essential, high protein diets are not recommended. Remember that carbohydrates and fat are also important.
+# SendActivity_3CMMey()
+[Activity
+    Text = ${SendActivity_3CMMey_text()}
+]
+
+# SendActivity_3CMMey_text()
+- Your product has a lot of carbohydrates!\n\nCarbohydrates are an essential part of our diet. Most importantly, they provide the energy for all functions of our body, as well as the structure and function of our cells, tissues and organs. Remember that not all types of carbohydrates are healthy. Limit foods with added sugars and refined grains (sugary drinks, desserts and candy). Instead, go for fruits, vegetables and whole grains.

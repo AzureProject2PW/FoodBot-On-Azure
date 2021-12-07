@@ -1,0 +1,36 @@
+
+# get_bmi
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+- calculate bmi
+- Could you please calculate my BMI?
+- Calculate my BMI.
+- I need to calculate my BMI.
+
+# get_food
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+- food
+- I need an information about food.
+- Tell me about a product.
+- Could you please tell me about a product?
+
+
+# get_dcr
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+- calculate dcr
+- Calculate my DCR please.
+- Could you please calculate my DCR?

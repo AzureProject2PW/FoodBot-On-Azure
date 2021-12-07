@@ -1,0 +1,58 @@
+[import](common.lg)
+
+# SendActivity_9BikGk()
+[Activity
+    Text = ${SendActivity_9BikGk_text()}
+]
+
+# SendActivity_9BikGk_text()
+- If you want to calculate your Body Mass Index (BMI), please follow steps below.
+# NumberInput_Prompt_zXb2UI()
+[Activity
+    Text = ${NumberInput_Prompt_zXb2UI_text()}
+]
+
+# NumberInput_Prompt_zXb2UI_text()
+- Please type your weight (in kilograms).
+# NumberInput_Prompt_SQ8jbw()
+[Activity
+    Text = ${NumberInput_Prompt_SQ8jbw_text()}
+]
+
+# NumberInput_Prompt_SQ8jbw_text()
+- Now please type your height (in meters).
+# SendActivity_brb150()
+[Activity
+    Text = ${SendActivity_brb150_text()}
+]
+
+# SendActivity_brb150_text()
+- Thank you. Your Body Mass Index is ${round(div(user.weight, mul(user.height, user.height)),2)}.\n\nPlease see this list below to check the category.\n\n\n\nBMI Categories:\n\nUnderweight = <18.5\n\nNormal weight = 18.5–24.9\n\nOverweight = 25–29.9\n\nObesity = BMI of 30 or greater
+# NumberInput_InvalidPrompt_zXb2UI()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_zXb2UI_text()}
+]
+
+# NumberInput_InvalidPrompt_zXb2UI_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your weight (in kilograms).\n\nFor example: 65.6, 71.0 or 87 – that should help.
+# NumberInput_InvalidPrompt_SQ8jbw()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_SQ8jbw_text()}
+]
+
+# NumberInput_InvalidPrompt_SQ8jbw_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your height (in meters).\n\nFor example: 1.56, 1.7 or 2 – that should help.
+# NumberInput_UnrecognizedPrompt_SQ8jbw()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_SQ8jbw_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_SQ8jbw_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your height (in meters).\n\nFor example: 1.56, 1.7 or 2 – that should help.
+# NumberInput_UnrecognizedPrompt_zXb2UI()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_zXb2UI_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_zXb2UI_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your weight (in kilograms).\n\nFor example: 65.6, 71.0 or 87 – that should help.

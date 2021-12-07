@@ -1,0 +1,95 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "PygpGp",
+    "name": "bmi",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "4XJ4Yh"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "9BikGk"
+          },
+          "activity": "${SendActivity_9BikGk()}"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "zXb2UI"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_zXb2UI()}",
+          "property": "user.weight",
+          "validations": [
+            "=int(this.value) != null ",
+            "=this.value < 250",
+            "=this.value > 0"
+          ],
+          "invalidPrompt": "${NumberInput_InvalidPrompt_zXb2UI()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_zXb2UI()}"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "SQ8jbw"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_SQ8jbw()}",
+          "property": "user.height",
+          "validations": [
+            "=this.value < 3.0",
+            "=this.value > 0.0",
+            "=float(this.value) != null"
+          ],
+          "invalidPrompt": "${NumberInput_InvalidPrompt_SQ8jbw()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_SQ8jbw()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "brb150"
+          },
+          "activity": "${SendActivity_brb150()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperties",
+          "$designer": {
+            "id": "7YXrty"
+          },
+          "properties": [
+            "user.weight",
+            "user.height"
+          ]
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "auwjLl"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "bmi.lg",
+  "recognizer": "bmi.lu.qna",
+  "id": "bmi"
+}

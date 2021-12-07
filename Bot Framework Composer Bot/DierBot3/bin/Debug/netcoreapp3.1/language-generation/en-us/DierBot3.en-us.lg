@@ -1,0 +1,24 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Hello, I'm Diet Bot.\n\nFeel free to ask me anything that is related to food or dieting. Please give me a name of a particular ingredient, and I will try to help you identify if it's healthy or not. You can also ask me about anything related to diets. I will give you an insight into everything you need to know about these subjects.\n\nIf you want to, we can have a friendly chat about anything else in the meantime :)
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- I'm so sorry, I don't think I understand that statement. Could you please rephrase that?\n\nIf I still cannot answer your question, that means I might not be able to help you in that particular matter. Thank you for your understanding.
+# TextInput_Prompt_sNDzrt()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_yIalcY()
+- ${expandText(@answer)}

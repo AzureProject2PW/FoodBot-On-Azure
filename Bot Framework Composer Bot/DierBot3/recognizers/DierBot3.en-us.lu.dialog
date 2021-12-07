@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_DierBot3",
+  "applicationId": "=settings.luis.DierBot3_en_us_lu.appId",
+  "version": "=settings.luis.DierBot3_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

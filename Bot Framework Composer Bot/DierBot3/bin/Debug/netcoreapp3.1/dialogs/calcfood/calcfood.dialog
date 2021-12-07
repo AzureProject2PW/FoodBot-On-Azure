@@ -1,0 +1,162 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "YMHIfH",
+    "name": "calcfood",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "rVI600"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "YVMx7W"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_YVMx7W()}",
+          "property": "user.product"
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "amauDr"
+          },
+          "resultProperty": "dialog.api_response",
+          "method": "GET",
+          "url": "https://api.edamam.com/api/food-database/v2/parser?app_id=3568457b&app_key=d5f8c50451fd0dd3bbaab31f8d956265&ingr=${user.product}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "k1BwDR"
+          },
+          "value": "=(dialog.api_response.content.parsed[0])",
+          "property": "dialog.product"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "bxTFUT"
+          },
+          "property": "dialog.product",
+          "value": "=(dialog.api_response.content.parsed[0])"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "K5N36K"
+          },
+          "condition": "= dialog.api_response.statusCode == 200 && exists(dialog.product.food.nutrients)",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "mOfag5"
+              },
+              "property": "dialog.product",
+              "value": "=(dialog.api_response.content.parsed[0])"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "AFc0j1"
+              },
+              "activity": "${SendActivity_AFc0j1()}"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "1npdty"
+              },
+              "condition": "float(dialog.product.food.nutrients.PROCNT) > float(dialog.product.food.nutrients.CHOCDF) && float(dialog.product.food.nutrients.PROCNT) > float(dialog.product.food.nutrients.FAT)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "wtvldj"
+                  },
+                  "activity": "${SendActivity_wtvldj()}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "1kKVMK"
+                  },
+                  "condition": "float(dialog.product.food.nutrients.FAT) > float(dialog.product.food.nutrients.CHOCDF) && float(dialog.product.food.nutrients.FAT) > float(dialog.product.food.nutrients.PROCNT)",
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "3CYY1S"
+                      },
+                      "condition": "float(dialog.product.food.nutrients.CHOCDF) > float(dialog.product.food.nutrients.FAT) && float(dialog.product.food.nutrients.CHOCDF) > float(dialog.product.food.nutrients.PROCNT)",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "3CMMey"
+                          },
+                          "activity": "${SendActivity_3CMMey()}"
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "paS4va"
+                      },
+                      "activity": "${SendActivity_paS4va()}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "joO4ZX"
+              },
+              "activity": "${SendActivity_joO4ZX()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "$designer": {
+            "id": "rVB362"
+          },
+          "property": "user.product"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "xn9IXp"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "calcfood.lg",
+  "recognizer": "calcfood.lu.qna",
+  "id": "calcfood"
+}

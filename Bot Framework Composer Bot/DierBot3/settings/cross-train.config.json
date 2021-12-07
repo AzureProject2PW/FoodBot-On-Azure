@@ -1,0 +1,16 @@
+{
+  "DierBot3.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "get_bmi": [
+        "bmi.en-us"
+      ],
+      "get_food": [
+        "calcfood.en-us"
+      ],
+      "get_dcr": [
+        "dcr.en-us"
+      ]
+    }
+  }
+}

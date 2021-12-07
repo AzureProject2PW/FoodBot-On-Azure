@@ -1,0 +1,79 @@
+[import](common.lg)
+
+# NumberInput_Prompt_A3DoT5()
+[Activity
+    Text = ${NumberInput_Prompt_A3DoT5_text()}
+]
+
+# NumberInput_Prompt_A3DoT5_text()
+- Type your weight (in kilograms).
+# NumberInput_Prompt_PHEflZ()
+[Activity
+    Text = ${NumberInput_Prompt_PHEflZ_text()}
+]
+
+# NumberInput_Prompt_PHEflZ_text()
+- Type your height (in centimeters).
+# NumberInput_Prompt_PeWXqk()
+[Activity
+    Text = ${NumberInput_Prompt_PeWXqk_text()}
+]
+
+# NumberInput_Prompt_PeWXqk_text()
+- Type your age.
+# ChoiceInput_Prompt_WjVC3Q()
+[Activity
+    Text = ${ChoiceInput_Prompt_WjVC3Q_text()}
+]
+
+# ChoiceInput_Prompt_WjVC3Q_text()
+- Choose your level of activity.
+# SendActivity_OakQIG()
+[Activity
+    Text = ${SendActivity_OakQIG_text()}
+]
+
+# SendActivity_OakQIG_text()
+- Daily Calorie Requirements: ${round(user.kcal, 2)} kcal\n\nPlease see more specific values below:\n\nCarbohydrates: ${round(user.kcal * 0.55, 2)} kcal\n\nProtein: ${round(user.kcal * 0.15, 2)} kcal\n\nFats: ${round(user.kcal * 0.30, 2)} kcal
+# NumberInput_InvalidPrompt_A3DoT5()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_A3DoT5_text()}
+]
+
+# NumberInput_InvalidPrompt_A3DoT5_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your weight (in kilograms).\n\nFor example: 67.6, 83.0 or 76 – that should help.
+# NumberInput_InvalidPrompt_PHEflZ()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_PHEflZ_text()}
+]
+
+# NumberInput_InvalidPrompt_PHEflZ_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your height (in centimeters).\n\nFor example: 156 or 170 – that should help.
+# NumberInput_UnrecognizedPrompt_A3DoT5()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_A3DoT5_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_A3DoT5_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your weight (in kilograms).\n\nFor example: 67.6, 83.0 or 76 – that should help.
+# NumberInput_UnrecognizedPrompt_PHEflZ()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_PHEflZ_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_PHEflZ_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your height (in centimeters).\n\nFor example: 156 or 170 – that should help.
+# NumberInput_InvalidPrompt_PeWXqk()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_PeWXqk_text()}
+]
+
+# NumberInput_InvalidPrompt_PeWXqk_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your age.\n\nFor example: 26 or 72 – that should help.
+# NumberInput_UnrecognizedPrompt_PeWXqk()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_PeWXqk_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_PeWXqk_text()
+- I'm sorry, but there was a problem with a number you entered. Please type your age.\n\nFor example: 26 or 72 – that should help.

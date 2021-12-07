@@ -1,0 +1,215 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "vqyfGC",
+    "name": "dcr",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "T7Oei2"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "A3DoT5"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_A3DoT5()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_A3DoT5()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_A3DoT5()}",
+          "property": "user.weight",
+          "validations": [
+            "= this.value < 250",
+            "= this.value > 0",
+            "=float(this.value) != null"
+          ]
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "PHEflZ"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_PHEflZ()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_PHEflZ()}",
+          "property": "user.height",
+          "validations": [
+            "=this.value < 300",
+            "=this.value > 0",
+            "=float(this.value) != null"
+          ],
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_PHEflZ()}"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "PeWXqk"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_PeWXqk()}",
+          "property": "user.age",
+          "validations": [
+            "=this.value < 150",
+            "=this.value > 0",
+            "=float(this.value) != null"
+          ],
+          "invalidPrompt": "${NumberInput_InvalidPrompt_PeWXqk()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_PeWXqk()}"
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "WjVC3Q"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 100,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "prompt": "${ChoiceInput_Prompt_WjVC3Q()}",
+          "style": "heroCard",
+          "choices": [
+            "no sport",
+            "light activity (sport 1-3 times per week)",
+            "moderate activity (sport 3-5 times per week)",
+            "high activity (everyday exercise)",
+            "extreme activity (professional)"
+          ],
+          "property": "user.activity",
+          "recognizerOptions": {
+            "recognizeOrdinals": true
+          }
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "8taqmu"
+          },
+          "condition": "user.activity",
+          "cases": [
+            {
+              "value": "light activity (sport 1-3 times per week)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "5Udt0x"
+                  },
+                  "property": "user.activity",
+                  "value": 1.38
+                }
+              ]
+            },
+            {
+              "value": "moderate activity (sport 3-5 times per week)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "NbWcYL"
+                  },
+                  "property": "user.activity",
+                  "value": 1.55
+                }
+              ]
+            },
+            {
+              "value": "high activity (everyday exercise)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "SaWfP2"
+                  },
+                  "property": "user.activity",
+                  "value": 1.73
+                }
+              ]
+            },
+            {
+              "value": "extreme activity (professional)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "AvOZRK"
+                  },
+                  "property": "user.activity",
+                  "value": 1.9
+                }
+              ]
+            }
+          ],
+          "default": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "TbOn8R"
+              },
+              "property": "user.activity",
+              "value": 1.2
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "HvNO5s"
+          },
+          "property": "user.kcal",
+          "value": "= float(round(mul(sub(sub(mul(10, user.weight), mul(-6.25, user.height)), mul(5, user.age)), user.activity),2))"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "OakQIG"
+          },
+          "activity": "${SendActivity_OakQIG()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperties",
+          "$designer": {
+            "id": "SeZdZS"
+          },
+          "properties": [
+            "user.height",
+            "user.activity",
+            "user.weight",
+            "user.age",
+            "user.kcal"
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "dcr.lg",
+  "recognizer": "dcr.lu.qna",
+  "id": "dcr"
+}
