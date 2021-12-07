@@ -105,7 +105,7 @@ Bot umożliwia wyliczenie wskaźnika masy ciała (BMI) oraz zapotrzebowanie kalo
 
 Nasz bot daje również możliwość zwracania informacji o kaloryczności i zawartości składników odżywczych produktu spożywczego podanego przez użytkownika. Najpierw należy poinformować bota o tym, że chcemy poznać kaloryczność produktu poprze wpisanie słowa *Food* lub frazy *Tell me about a product*. Potem należy podać nazwę produktu. Pojawiają się informacje o kaloryczności, zawartości węglowodanów, białka, tłuszczy i błonnika. Następnie bot analizuje zwracane wartości odżywcze i informuje o dominującym makroskładniku.
 
-![bot_8](https://user-images.githubusercontent.com/64069048/144938218-23e0adb8-3728-4a4b-b68d-8f0fbcde0f49.png)
+![bot_9](https://user-images.githubusercontent.com/64069048/144980743-3f4dd59a-a604-4d35-a29b-342196732d02.png)
 
 W przypadku podanych błędnych danych przez użytkownika, bot o tym poinformuje.
 
